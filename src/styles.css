@@ -1,0 +1,72 @@
+#new-todo-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-todo-form > * {
+  margin: 0.15rem;
+}
+
+#list {
+  padding: 0;
+}
+
+.list-item {
+  list-style: none;
+}
+
+.list-item-label:hover,
+.label-input:hover {
+  cursor: pointer;
+}
+
+.list-item-label:hover > .label-text {
+  color: #333;
+  text-decoration: line-through;
+}
+
+.label-input:checked ~ .label-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  margin-left: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode #new-todo-form label {
+  color: #e0e0e0;
+}
+
+body.dark-mode .list-item-label:hover > .label-text {
+  color: #ccc;
+}
+
+body.dark-mode .label-input:checked ~ .label-text {
+  color: #666;
+}
+
+body.dark-mode .delete-btn {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+body.dark-mode button:hover {
+  background-color: #555;
+}
+
