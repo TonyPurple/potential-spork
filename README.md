@@ -1,2 +1,2 @@
 # potential-spork
-basic vite-tyoescript-localstorage todo app
+basic vite-typescript-localstorage todo app
